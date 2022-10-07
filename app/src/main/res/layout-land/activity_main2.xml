@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/TextViewCantCopas"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:text="@string/cantidad_copas"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -17,20 +17,19 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ListaAmigos"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <ScrollView
         android:id="@+id/ListaAmigos"
-        android:layout_width="409dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="375dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewCantCopas"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,14 +39,14 @@
 
     <Button
         android:id="@+id/buttonReset"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_width="230dp"
+        android:layout_height="104dp"
         android:text="@string/btnReset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListaAmigos"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintStart_toEndOf="@+id/ListaAmigos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
 
     <SeekBar
         android:id="@+id/seekBarTamanno"
@@ -57,9 +56,9 @@
         android:progress="14"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListaAmigos"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintStart_toEndOf="@+id/ListaAmigos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71000004" />
 
     <TextView
         android:id="@+id/textViewTamText"
@@ -71,8 +70,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListaAmigos"
-        app:layout_constraintVertical_bias="0.69" />
+        app:layout_constraintStart_toEndOf="@+id/ListaAmigos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

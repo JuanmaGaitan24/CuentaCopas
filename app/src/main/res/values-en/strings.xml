@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CupCount</string>
+    <string name="app_name">DrinkCount</string>
     <string name="N_amigos">Numbers of Friends</string>
     <string name="N_copas">Numbers of Cups</string>
     <string name="Abeber" >!! LET\'S DRINK !!</string>
+    <string name="cantidad_copas">Total Drinks:</string>
+    <string name="btnReset">Reset</string>
+    <string name="TamText">Text Size:</string>
 
 </resources>

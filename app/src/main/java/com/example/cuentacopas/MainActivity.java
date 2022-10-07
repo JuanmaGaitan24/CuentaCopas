@@ -12,7 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String NOMBRE = "NOMBRE";
+    public static final String AMIGOS = "AMIGOS";
+    public static final String COPAS = "COPAS";
     public static final int CODIGO = 24;
     TextView NumeroAmigos;
     TextView NumeroCopas;
@@ -48,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
                 if (namigos > ncopas){
 
-                    Toast toast = Toast.makeText(getApplicationContext(), "La cantidad de copas nos puede superar la cantidad de amigos", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(getApplicationContext(), "No Puede haber mas amigos que copas", Toast.LENGTH_LONG);
                     toast.show();
 
                 }else {
 
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                    intent.putExtra(NOMBRE, namigos);
-                    intent.putExtra(NOMBRE, ncopas);
+                    intent.putExtra(AMIGOS, NumeroAmigos.getText().toString());
+                    intent.putExtra(COPAS, NumeroCopas.getText().toString());
                     startActivityForResult(intent, CODIGO);
 
                 }
