@@ -6,4 +6,5 @@
     <string name="cantidad_copas">Copas Totales:</string>
     <string name="btnReset">Resetear</string>
     <string name="TamText">Tamaño de Texto:</string>
+    <string name="amigo">Amigo</string>
 </resources>

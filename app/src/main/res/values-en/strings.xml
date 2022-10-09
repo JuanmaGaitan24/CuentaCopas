@@ -7,5 +7,6 @@
     <string name="cantidad_copas">Total Drinks:</string>
     <string name="btnReset">Reset</string>
     <string name="TamText">Text Size:</string>
+    <string name="amigo">Friend</string>
 
 </resources>
