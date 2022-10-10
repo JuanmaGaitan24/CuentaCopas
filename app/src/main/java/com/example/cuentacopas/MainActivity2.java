@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class MainActivity2 extends AppCompatActivity {
     TextView TamText;
     SeekBar BarraTam;
     ScrollView ListAmigos;
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -40,6 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
         BarraTam = findViewById(R.id.seekBarTamanno);
         ListAmigos = findViewById(R.id.ListaAmigos);
 
+
         Intent intent = getIntent();
 
         int copas = Integer.parseInt(intent.getStringExtra(MainActivity.COPAS));
@@ -48,11 +51,27 @@ public class MainActivity2 extends AppCompatActivity {
         Ncopas.setText(Ncopas.getText() + " " + copas);
         TamText.setText(TamText.getText() + " " + BarraTam.getProgress());
 
+        BarraTam.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+               TamText.setText(getString(R.string.TamText) + " " + BarraTam.getProgress());
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         AdaptadorAmigos adaptadoramigos = new AdaptadorAmigos(this, R.layout.amigo, amigos);
 
-
-
     }
+
 
     private class AdaptadorAmigos extends ArrayAdapter<String>{
 
