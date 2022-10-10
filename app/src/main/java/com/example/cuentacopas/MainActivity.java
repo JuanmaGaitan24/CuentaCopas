@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (namigos > ncopas){
 
-                    Toast toast = Toast.makeText(getApplicationContext(), "No Puede haber mas amigos que copas", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.MensgError), Toast.LENGTH_LONG);
                     toast.show();
 
                 }else {

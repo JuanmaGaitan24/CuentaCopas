@@ -7,4 +7,7 @@
     <string name="btnReset">Resetear</string>
     <string name="TamText">Tamaño de Texto:</string>
     <string name="amigo">Amigo</string>
+    <string name="MensgError">El numero de amigos no puede ser mayor que el numero de copas</string>
+    <string name="sincopas">No quedan mas copas:</string>
+    <string name="notienescopas">No tienes copas para añadir</string>
 </resources>

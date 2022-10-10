@@ -8,5 +8,9 @@
     <string name="btnReset">Reset</string>
     <string name="TamText">Text Size:</string>
     <string name="amigo">Friend</string>
+    <string name="MensgError">The number of friends cannot be greater than the number of drinks</string>
+    <string name="sincopas">No more drinks left:</string>
+    <string name="notienescopas">You have no drinks to add</string>
+
 
 </resources>
